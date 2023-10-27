@@ -8,6 +8,12 @@
   line-height: 20px;
   font-size: 14px;
   text-transform: lowercase;
+
+  @include dw() {
+    br {
+      display: none;
+    }
+  }
 }
 
 .contacts__item::before {

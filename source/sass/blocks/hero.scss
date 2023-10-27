@@ -29,7 +29,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     padding-top: 30px;
-    padding-bottom: 84px;
+    padding-bottom: 74px;
     column-gap: 30px;
   }
 }
@@ -41,7 +41,7 @@
   width: 20px;
   background-repeat: no-repeat;
   top: -20px;
-  background-color: #f3ebe1;
+  background-color: inherit;
   border: none;
   cursor: pointer;
 
@@ -52,7 +52,7 @@
   }
 
   @include dw() {
-    height: 723px;
+    height: 100%;
     top: 0;
   }
 }
@@ -76,6 +76,11 @@
   @include tw() {
     background-position: 50% 53%;
   }
+
+  @include dw() {
+    margin-left: 190px;
+    background-position: 50% 50%;
+  }
 }
 
 .slider-button-next {
@@ -85,6 +90,11 @@
 
   @include tw() {
     background-position: 50% 53%;
+  }
+
+  @include dw() {
+    margin-right: 190px;
+    background-position: 50% 50%
   }
 }
 
@@ -135,7 +145,7 @@
   }
 
   @include dw() {
-    margin-top: 170px;
+    margin-top: 150px;
     order: 0;
   }
 }
@@ -231,6 +241,7 @@
 
   @include dw() {
     justify-content: start;
+    column-gap: 24px;
   }
 }
 

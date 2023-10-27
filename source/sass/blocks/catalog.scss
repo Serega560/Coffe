@@ -13,7 +13,7 @@
   }
 
   @include dw() {
-    padding: 100px 40px 120px;
+    padding: 100px 0 120px;
   }
 }
 
@@ -39,6 +39,7 @@
 
   @include dw() {
     display: block;
+    padding-left: 41px;
   }
 }
 
@@ -70,7 +71,7 @@
   }
 
   @include dw() {
-    margin-bottom: 80px;
+    margin-bottom: 41px;
   }
 }
 
@@ -115,6 +116,10 @@
 
   @include tw() {
     margin-right: 8px;
+  }
+
+  @include dw() {
+    margin-right: 49px;
   }
 }
 
@@ -226,6 +231,7 @@
   @include tw() {
     width: 395px;
     margin-left: auto;
+    margin-right: 26px;
   }
 }
 

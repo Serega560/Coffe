@@ -85,7 +85,7 @@
   }
 
   @include dw() {
-    width: 110px;
+    width: 113px;
   }
 }
 
@@ -131,15 +131,15 @@
 
 .noUi-horizontal .noUi-handle {
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   right: -26px;
   top:  -11px;
   color: #7859CF;
 }
 
 .noUi-horizontal .noUi-handle-upper {
-  right: -10px;
+  right: -19px;
 }
 
 .range__input::-webkit-outer-spin-button,

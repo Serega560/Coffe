@@ -20,6 +20,10 @@
 
 .form__fieldset-block {
   width: 280px;
+
+  @include dw() {
+    margin-bottom: 3px;
+  }
 }
 
 .form__list {
@@ -215,7 +219,7 @@
   margin-bottom: 45px;
 
   @include tw() {
-    column-gap: 37px;
+    column-gap: 21px;
   }
 }
 
@@ -231,6 +235,7 @@
 
   @include dw() {
     margin-left: 0;
+    width: 148px;
   }
 }
 
