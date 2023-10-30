@@ -1,11 +1,9 @@
 /* в этот файл добавляет скрипты*/
-
 const header = document.querySelector('.header');
 const button = header.querySelector('.header__burger');
 
-button.addEventListener('click', () => {
-  header.classList.toggle('header--nav-opened')
-})
+button.addEventListener('click', () => header.classList.toggle('header--nav-opened'));
+
 
 const rangeSliderInit = () => { // создаем функцию инициализации слайдера
   const range = document.getElementById('range');
@@ -47,4 +45,23 @@ const init = () => {
 
 window.addEventListener('DOMContentLoaded', init)
 
+ new Swiper('.swiper', {
+  // Параметры
+  direction: 'horizontal',
+  loop: true,
 
+  // Кнопки
+  navigation: {
+    nextEl: '.swiper-slider__arrow--next',
+    prevEl: '.swiper-slider__arrow--prev',
+  },
+
+  // Пагинация
+  pagination: {
+    el: '.hero__pagination-list',
+    clickable: true,
+    dynamicBullets: true,
+  },
+   grabCursor: true,
+   slideToClickedSlide: true,
+});
