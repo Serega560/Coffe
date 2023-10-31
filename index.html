@@ -11,6 +11,11 @@
   <link rel="preload" href="./fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="./images/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -110,7 +115,7 @@
               <source type="image/webp"
                       srcset="images/hero/lavender_mobile.webp, images/hero/lavender_@2xmobile.webp 2x">
               <source type="image/webp" media="(min-width: 1440px)"
-                      srcset="images/hero/lavender_desktop.png, images/hero/lavender@2xdesktop.png 2x">
+                      srcset="images/hero/lavender_desktop.png, images/hero/lavender_@2xdesktop.png 2x">
               <source type="image/webp" media="(min-width: 768px)"
                       srcset="images/hero/lavender_tablet.png, images/hero/lavender_@2xtablet.png 2x">
               <img class="hero__img-slider" src="images/hero/lavender_mobile.png"
@@ -442,35 +447,33 @@ does not matter" checked>
           </ul>
         </div>
       </div>
-      <div class="catalog__pages">
-        <ol class="catalog__list-pages">
-          <li>
-            <button class="catalog__button-pages catalog__button-pages--mb button" type="button">
-              <span>Назад</span>
-            </button>
-          </li>
-          <li>
-            <button class="catalog__button-pages button" type="button">
-              <span>1</span>
-            </button>
-          </li>
-          <li>
-            <button class="catalog__button-pages catalog__button-pages--current button" type="button">
-              <span>2</span>
-            </button>
-          </li>
-          <li>
-            <button class="catalog__button-pages button" type="button">
-              <span>3</span>
-            </button>
-          </li>
-          <li>
-            <button class="catalog__button-pages catalog__button-pages--mb-b button" type="button">
-              <span>Вперёд</span>
-            </button>
-          </li>
-        </ol>
-      </div>
+      <ol class="catalog__list-pages">
+        <li class="catalog__button-pages catalog__button-pages--mb">
+          <a href="#" >
+            <span>Назад</span>
+          </a>
+        </li>
+        <li class="catalog__button-pages">
+          <a href="#" >
+            <span>1</span>
+          </a>
+        </li>
+        <li class="catalog__button-pages catalog__button-pages--current">
+          <a href="#" >
+            <span>2</span>
+          </a>
+        </li>
+        <li class="catalog__button-pages">
+          <a href="#">
+            <span>3</span>
+          </a>
+        </li>
+        <li class="catalog__button-pages catalog__button-pages--mb-b">
+          <a href="#">
+            <span>Вперёд</span>
+          </a>
+        </li>
+      </ol>
     </div>
   </section>
   <section id="map" class="map" data-test="map">
@@ -586,8 +589,8 @@ does not matter" checked>
     </div>
   </footer>
 </main>
-<script src="./js/libs/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+<script src="js/libs/swiper-bundle.min.js"></script>
 <script src="js/script.js" defer></script>
 </body>
 </html>
