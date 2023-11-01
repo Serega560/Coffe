@@ -217,6 +217,7 @@
   row-gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 45px;
+  justify-content: center;
 
   @include tw() {
     column-gap: 21px;
