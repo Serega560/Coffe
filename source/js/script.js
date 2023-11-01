@@ -6,7 +6,7 @@ button.addEventListener('click', () => header.classList.toggle('header--nav-open
 
 
 const rangeSliderInit = () => { // создаем функцию инициализации слайдера
-  const range = document.getElementById('range');
+  const range = document.getElementById('range-www');
   const inputMin = document.getElementById('min');
   const inputMax = document.getElementById('max');
 
@@ -43,7 +43,8 @@ const init = () => {
   rangeSliderInit()
 }
 
-window.addEventListener('DOMContentLoaded', init)
+window.addEventListener('DOMContentLoaded', init);
+
 
  new Swiper('.swiper', {
   // Параметры
@@ -62,6 +63,6 @@ window.addEventListener('DOMContentLoaded', init)
     clickable: true,
     dynamicBullets: true,
   },
-   grabCursor: true,
-   slideToClickedSlide: true,
+  grabCursor: true,
+  slideToClickedSlide: true,
 });

@@ -217,11 +217,15 @@
                 <div class="range__title">
                 </div>
                 <div class="range__slider">
-                  <div id="range"></div>
+                  <div id="range-www"></div>
                 </div>
                 <div class="range__values">
-                  <input class="range__input" name="left-handle" type="number" value="0">
-                  <input class="range__input" name="right-handle" type="number" value="900" max="1000">
+                  <label for="min">
+                    <input class="range__input" name="left-handle" type="number" id="min" value="0">
+                  </label>
+                  <label for="max">
+                    <input class="range__input" name="right-handle" type="number" id="max" value="900">
+                  </label>
                 </div>
               </div>
             </div>
@@ -328,6 +332,8 @@ does not matter" checked>
             <span class="catalog__filter">Сортировка:</span>
             <select class="catalog__select-control" name="Сортировка">
               <option value="default">По умолчанию</option>
+              <option value="cheap">Снала дешевые</option>
+              <option value="expensive">Снала дорогие</option>
             </select>
           </div>
           <ul class="catalog__product">
@@ -450,17 +456,17 @@ does not matter" checked>
       </div>
       <ol class="catalog__list-pages">
         <li class="catalog__button-pages catalog__button-pages--mb">
-          <a href="#" >
+          <a href="#">
             <span>Назад</span>
           </a>
         </li>
         <li class="catalog__button-pages">
-          <a href="#" >
+          <a href="#">
             <span>1</span>
           </a>
         </li>
         <li class="catalog__button-pages catalog__button-pages--current">
-          <a href="#" >
+          <a href="#">
             <span>2</span>
           </a>
         </li>
@@ -501,7 +507,8 @@ does not matter" checked>
         <div class="footer__logo-socials">
           <a class="footer__logo logo" href="index.html">
             <picture>
-              <source type="image/webp" media="(min-width:768px)" srcset="images/logoDesktop.svg" width="170" height="36">
+              <source type="image/webp" media="(min-width:768px)" srcset="images/logoDesktop.svg" width="170"
+                      height="36">
               <img src="images/logoTablet.svg" alt="Логотип Готудринк" width="82" height="36">
             </picture>
           </a>
@@ -569,7 +576,7 @@ does not matter" checked>
             <h3>Контакты</h3>
             <ul class="footer__contacts contacts">
               <li class="contacts__item contacts__item--address">
-                Санкт-Петербург, набережная <br> реки Карповки, дом 5
+                Санкт-Петербург,набережная <br> реки Карповки,дом 5
               </li>
               <li class="contacts__item contacts__item--phone">
                 <a href="#" type="number">+7 (999) 999-99-99</a>
@@ -590,8 +597,8 @@ does not matter" checked>
     </div>
   </footer>
 </main>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.3/swiper-bundle.min.js"></script>
-<script src="js/script.js" defer></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.3/swiper-bundle.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
