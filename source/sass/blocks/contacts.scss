@@ -7,7 +7,7 @@
   padding-top: 6px;
   line-height: 20px;
   font-size: 14px;
-  text-transform: lowercase;
+  text-transform: none;
 
   @include dw() {
     br {

@@ -278,6 +278,7 @@
   width: 24px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  padding: 20px 8px;
 
   @include tw() {
     background-image: none;
@@ -296,6 +297,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transform: rotate(180deg);
+  padding: 20px 8px;
 
   @include tw() {
     background-image: none;

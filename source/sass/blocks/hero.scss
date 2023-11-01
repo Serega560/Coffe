@@ -28,7 +28,7 @@
   padding-top: 20px;
 
   @include tw() {
-    background-image: linear-gradient(to bottom, #f3ebe1 640px, #ffffff 640px);
+    background-image: linear-gradient(to bottom, #f3ebe1 700px, #ffffff 700px);
     padding-top: 60px;
   }
 
@@ -46,7 +46,7 @@
     background-color: #EAE6FC;
 
     @include tw() {
-      background-image: linear-gradient(to bottom, #EAE6FC 640px, #ffffff 640px);
+      background-image: linear-gradient(to bottom, #EAE6FC 700px, #ffffff 700px);
     }
 
     @include dw() {
@@ -58,7 +58,7 @@
     background-color: #E5E6E8;
 
     @include tw() {
-      background-image: linear-gradient(to bottom, #E5E6E8 640px, #ffffff 640px);
+      background-image: linear-gradient(to bottom, #E5E6E8 700px, #ffffff 700px);
     }
 
     @include dw() {
@@ -128,6 +128,11 @@
   margin-bottom: 10px;
 
   @include tw() {
+
+    br {
+      display: none;
+    }
+
     display: grid;
     order: -3;
     margin-bottom: 16px;
@@ -275,7 +280,7 @@
 
   @include tw {
     width: 80px;
-    height: 76%;
+    height: 78%;
   }
 
   @include dw {

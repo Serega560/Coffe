@@ -66,15 +66,15 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 38px;
-  justify-content: space-between;
   padding-top: 20px;
+  column-gap: 50px;
 
 
   @include tw() {
     display: grid;
     grid-template-columns: repeat(3, 223px);
-    column-gap: 30px;
     padding-top: 24px;
+    column-gap: 30px;
   }
 
   @include dw() {
@@ -111,9 +111,9 @@
 }
 
 .footer__wrapper a:focus-visible {
-    outline: 2px solid #7859CF;
-    outline-offset: 10px;
-  }
+  outline: 2px solid #7859CF;
+  outline-offset: 10px;
+}
 
 .footer__wrapper li {
   text-transform: uppercase;
@@ -128,12 +128,9 @@
 }
 
 .footer__copyright {
-  margin: 0;
   padding-top: 25px;
+  margin: 0 auto;
 
-  @include tw() {
-    margin: 0 auto;
-  }
 }
 
 .footer__copyright-link {
@@ -144,11 +141,8 @@
   column-gap: 4px;
   width: 280px;
   font-size: 12px;
-
-  @include tw() {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__copyright-link:hover {
