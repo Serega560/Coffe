@@ -25,8 +25,8 @@
     <div class="header__body">
       <a class="header__logo logo" href="index.html">
         <picture>
-          <source media="(min-width:1440px)" srcset="images/logoDesktop.svg" width="170" height="136">
-          <source media="(min-width:768px)" srcset="images/logoTablet.svg" width="82" height="136">
+          <source type="image/webp" media="(min-width:1440px)" srcset="images/logoDesktop.svg" width="170" height="136">
+          <source type="image/webp" media="(min-width:768px)" srcset="images/logoTablet.svg" width="82" height="136">
           <img src="images/logoMobile.svg" alt="Логотип Готудринк" width="32" height="36">
         </picture>
       </a>
@@ -34,7 +34,7 @@
     </div>
     <nav class="header__nav">
       <button class="header__burger js-toggle-button" type="button">
-        <span></span>
+        <span class="visually-hidden">Меню</span>
       </button>
       <ul class="header__list">
         <li class="header__item header__item--current">
@@ -94,7 +94,7 @@
             </picture>
             <div class="hero__info-slider">
               <p class="hero__new-promo">Новинка!</p>
-              <h2 class="hero__title">Декаф Флэт Уайт</h2>
+              <h2 class="hero__title">Декаф Флэт <br> Уайт</h2>
               <p class="hero__text">Свежесваренный кофе без кофеина из Эфиопии <br> с натуральным фермерским молоком —
                 то, что нужно для расслабления после тяжёлого рабочего дня</p>
               <div class="hero__price-button">
@@ -178,7 +178,7 @@
       </div>
     </div>
   </section>
-  <section id="features" class="features" data-test="features">
+  <section class="features" id="features" data-test="features">
     <div class="features__wrapper">
       <p class="features__text">Преимущества</p>
       <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
@@ -204,7 +204,7 @@
       </ul>
     </div>
   </section>
-  <section id="catalog" class="catalog" data-test="catalog">
+  <section class="catalog" id="catalog" data-test="catalog">
     <div class="catalog__wrapper">
       <p class="catalog__text">Каталог</p>
       <h2 class="catalog__title">Каталог кофейных напитков</h2>
@@ -220,8 +220,8 @@
                   <div id="range"></div>
                 </div>
                 <div class="range__values">
-                  <input class="range__input" id="min" type="number" value="0">
-                  <input class="range__input" id="max" type="number" value="900" max="1000">
+                  <input class="range__input" name="left-handle" type="number" value="0">
+                  <input class="range__input" name="right-handle" type="number" value="900" max="1000">
                 </div>
               </div>
             </div>
@@ -239,6 +239,7 @@ does not matter" checked>
                         <span class="form__mark"></span>
                         <span class="form__text">Неважно</span>
                       </label>
+                    </li>
                     <li class="form__radio">
                       <label class="form__label form__control-radio">
                         <input class="form__input form__input--radio
@@ -325,7 +326,7 @@ does not matter" checked>
         <div class="catalog__select-product">
           <div class="catalog__select">
             <span class="catalog__filter">Сортировка:</span>
-            <select class="catalog__select-control" aria-label="Сортировка">
+            <select class="catalog__select-control" name="Сортировка">
               <option value="default">По умолчанию</option>
             </select>
           </div>
@@ -476,7 +477,7 @@ does not matter" checked>
       </ol>
     </div>
   </section>
-  <section id="map" class="map" data-test="map">
+  <section class="map" id="map" data-test="map">
     <div class="map__wrapper">
       <h2 class="visually-hidden">Карта</h2>
       <picture>
@@ -494,20 +495,20 @@ does not matter" checked>
       </picture>
     </div>
   </section>
-  <footer id="about" class="footer" data-test="footer">
+  <footer class="footer" id="about" data-test="footer">
     <div class="footer__wrapper">
       <div class="footer__block">
         <div class="footer__logo-socials">
           <a class="footer__logo logo" href="index.html">
             <picture>
-              <source media="(min-width:768px)" srcset="images/logoDesktop.svg" width="170" height="36">
+              <source type="image/webp" media="(min-width:768px)" srcset="images/logoDesktop.svg" width="170" height="36">
               <img src="images/logoTablet.svg" alt="Логотип Готудринк" width="82" height="36">
             </picture>
           </a>
           <p class="footer__text">Интернет-магазин кофейных напитков</p>
           <ul class="footer__socials socials">
             <li class="socials__item">
-              <a class="socials__link socials__link--vk">
+              <a class="socials__link socials__link--vk" href="#">
                 <svg viewBox="0 0 20 20" width="20" height="20">
                   <use href="images/icons/stack.svg#vk"></use>
                 </svg>
@@ -515,7 +516,7 @@ does not matter" checked>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--pinterest">
+              <a class="socials__link socials__link--pinterest" href="#">
                 <svg viewBox="0 0 20 20" width="20" height="20">
                   <use href="images/icons/stack.svg#pinterest"></use>
                 </svg>
@@ -523,7 +524,7 @@ does not matter" checked>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--ok">
+              <a class="socials__link socials__link--ok" href="#">
                 <svg viewBox="0 0 20 20" width="20" height="20">
                   <use href="images/icons/stack.svg#ok"></use>
                 </svg>
@@ -537,16 +538,16 @@ does not matter" checked>
             <h3>Интернет-магазин</h3>
             <ul>
               <li>
-                <a href="">Каталог</a>
+                <a href="#catalog">Каталог</a>
               </li>
               <li>
-                <a href="">Доставка</a>
+                <a href="#">Доставка</a>
               </li>
               <li>
-                <a href="">Способы оплаты</a>
+                <a href="#">Способы оплаты</a>
               </li>
               <li>
-                <a href="">О нас</a>
+                <a href="#about">О нас</a>
               </li>
             </ul>
           </div>
@@ -554,13 +555,13 @@ does not matter" checked>
             <h3>Медиа</h3>
             <ul>
               <li>
-                <a href="">Блог</a>
+                <a href="#">Блог</a>
               </li>
               <li>
-                <a href="">Информация для СМИ</a>
+                <a href="#">Информация для СМИ</a>
               </li>
               <li>
-                <a href="">Правовая информация</a>
+                <a href="#">Правовая информация</a>
               </li>
             </ul>
           </div>
@@ -568,10 +569,10 @@ does not matter" checked>
             <h3>Контакты</h3>
             <ul class="footer__contacts contacts">
               <li class="contacts__item contacts__item--address">
-                <a href="">Санкт-Петербург, набережная <br> реки Карповки, дом 5</a>
+                Санкт-Петербург, набережная <br> реки Карповки, дом 5
               </li>
               <li class="contacts__item contacts__item--phone">
-                <a href="">+7 (999) 999-99-99</a>
+                <a href="#" type="number">+7 (999) 999-99-99</a>
               </li>
             </ul>
           </div>
@@ -589,8 +590,8 @@ does not matter" checked>
     </div>
   </footer>
 </main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.3/swiper-bundle.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.3/swiper-bundle.min.js"></script>
 <script src="js/script.js" defer></script>
 </body>
 </html>
